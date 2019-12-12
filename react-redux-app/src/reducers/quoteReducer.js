@@ -6,6 +6,7 @@ import {
 
 const initialState = {
     quote: null,
+    author: null,
     isFetching: false,
     error: ''
 }
@@ -20,7 +21,8 @@ const quoteReducer = (state = initialState, action) => {
         case FETCH_QUOTE_SUCCESS:
             return {
                 ...state,
-                quote: action.payload,
+                quote: action.payload.quoteText,
+                author: action.payload.quoteAuthor,
                 isFetching: false,
                 error: ''
             }
