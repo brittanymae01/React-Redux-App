@@ -8,13 +8,15 @@ const Quote = props => {
     return (
         <div>
             <h1>A Penny for your Quotes</h1>
-            {!props.quote && !props.isFetching && <p>Ready for some Inspiration?</p>}
-            {props.isFetching && (
-                <Loader type="Puff" color="#00BFFF" height={100} width={100} />
-            )}
-            <p>{props.author}</p>
-            <p>{props.quote}</p>
+            <div className='quote'>
+                {!props.quote && !props.isFetching && <p>Ready for some Inspiration?</p>}
+                {props.isFetching && (
+                    <Loader type="Puff" color='#b95f2a' height={50} width={50} />
+                )}
+                {props.quote && !props.isFetching && <><p>{props.quote}</p><p>- {props.author}</p></>}
+            </div>
             <button onClick={props.getQuote}>Click for a Quote</button>
+
         </div>
     )
 }
