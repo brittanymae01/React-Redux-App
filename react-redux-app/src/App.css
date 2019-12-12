@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+html {
+  height: 100%;
+}
+body {
+  background: linear-gradient(0.50turn, #d68556, #c46b37);
+}
+
+button {
+ margin: 30px;
+ background-color: antiquewhite;
+ padding: 8px 30px;
+ font-size: 12px;
+ box-shadow: 2px 3px 7px 3px #5f483a;
+ border-radius: 5px;
+}
+
+.quote {
+  background-color: antiquewhite;
+  width: 50%;
+  padding: 1rem;
+  margin: 0 auto;
+  box-shadow: 5px 8px 15px 10px #5f483a;
+  border-radius: 5px;
+}
+
+h1 {
+  opacity: 0.8;
+  margin: 50px;
+  font-size: 45px;
+}
